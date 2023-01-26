@@ -25,8 +25,6 @@ public class Main {
             System.out.println(number + " is odd");
         }
 
-        if (number % 2 == 0 || number >10){
-            System.out.println(number + " 123 ");
-        }
+
     }
 }
