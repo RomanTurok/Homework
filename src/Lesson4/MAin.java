@@ -12,6 +12,7 @@ public class MAin {
         int lenghts = str.length();
         int lastIndex = lenghts - 1;
         System.out.println(str.charAt(lastIndex));
+        System.out.println();
 
 
 
