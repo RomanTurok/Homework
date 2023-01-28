@@ -3,26 +3,20 @@ package Lesson5;
 public class Main {
     public static void main(String[] args) {
 
-        int number = 12;
+        int a = 56;
+        int b = 66;
 
-        if (number > 5) {
-            System.out.println(number + " > 5");
+        if (a > b) {
+            System.out.println(a + " > b");
+        }   else {
+            System.out.println(a + " < b");
         }
-        if (number < 5) {
-            System.out.println(number + " < 5");
-        }
 
 
-        if (number > 10) {
-            System.out.println(number + " > 10");
+        if (a % 2 == 0) {
+            System.out.println(a + " is even");
         } else {
-            System.out.println(number + " < 10");
-        }
-
-        if (number % 2 == 0) {
-            System.out.println(number + " is even");
-        } else {
-            System.out.println(number + " is odd");
+            System.out.println(a + " is odd");
         }
 
 
