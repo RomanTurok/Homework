@@ -20,7 +20,23 @@ public class Main {
         for (int i = 1; i <=7; i++) {
             fact = fact * i;
         }
-        System.out.println("Factorial of " + number + " is " + fact);
+        System.out.print("Factorial of " + number + " is " + fact);
+        System.out.println();
+
+        int n = 100;
+        int a = 0;
+        int b = 1;
+        System.out.print("Fibonacci Numbers Upto " + n +  ": ");
+
+        while (a <= n){
+            System.out.print(a + ", ");
+
+            int d = a + b;
+            a = b;
+            b = d;
+        }
+
+
 
 
 
