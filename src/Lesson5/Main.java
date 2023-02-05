@@ -24,10 +24,5 @@ public class Main {
         } else {
             System.out.println(number + " is odd");
         }
-<<<<<<< HEAD
-=======
-
-        if (number % 2 == || number >10){
->>>>>>> 83870a9 (Commit)
     }
 }
