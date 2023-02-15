@@ -6,6 +6,15 @@ public class Teacher {
     private String scienceDegree;
     private int yearsOfPractice;
 
+    public Teacher() {
+    }
+
+    public Teacher(String fullName, String scienceDegree, int yearsOfPractice) {
+        this.fullName = fullName;
+        this.scienceDegree = scienceDegree;
+        this.yearsOfPractice = yearsOfPractice;
+    }
+
     public String getFullName() {
         return fullName;
     }
@@ -28,6 +37,10 @@ public class Teacher {
 
     public void setYearsOfPractice(int yearsOfPractice) {
         this.yearsOfPractice = yearsOfPractice;
+    }
+
+    public void teach (){
+        System.out.println("I`m Teaching");
     }
 
     @Override

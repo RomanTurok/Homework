@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        int length = 10;
+        int length =10;
         int[] arr = new int[length];
 
         fillArrayRandomNumbers(arr, 10);

@@ -7,6 +7,16 @@ public class Student {
     private int dateOfBirth;
     private int yearOfStudy;
 
+    public Student() {
+    }
+
+    public Student(String fullName, String course, int dateOfBirth, int yearOfStudy) {
+        this.fullName = fullName;
+        this.course = course;
+        this.dateOfBirth = dateOfBirth;
+        this.yearOfStudy = yearOfStudy;
+    }
+
     public String getFullName() {
         return fullName;
     }
@@ -37,6 +47,10 @@ public class Student {
 
     public void setYear(int year) {
         this.yearOfStudy = year;
+    }
+
+    public void study(){
+        System.out.println("I`m Studying");
     }
 
     @Override
