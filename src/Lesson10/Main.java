@@ -9,6 +9,16 @@ public class Main {
         Teacher teacher = new Teacher("Mokra Galyna Petrivna", "Doctor Degree of Management",5);
         System.out.println(teacher);
 
+        Array array1 = new Array();
+        int[] array = array1.greatRandomArray(10);
+        array1.printArray(array);
+        array1.sortArrayMax(array);
+        array1.printArray(array);
+        array1.sortArrayMin(array);
+        array1.printArray(array);
+
+
+
 
 
 
