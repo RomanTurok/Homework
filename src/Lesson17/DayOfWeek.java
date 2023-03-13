@@ -9,6 +9,7 @@ public enum DayOfWeek {
     SATURDAY(6),
     SUNDAY(7);
 
+
     private int number;
 
     DayOfWeek(int number) {
@@ -19,4 +20,10 @@ public enum DayOfWeek {
         return number;
     }
 
-}
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+
+    }
+
