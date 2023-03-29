@@ -22,8 +22,16 @@ public class Main {
         student.sort((Students o1, Students o2) -> o1.getAverageScore()- o2.getAverageScore());
         student.forEach(System.out::println);
         System.out.println();
-//
-//
 
+        Comparator<Students> bySurname =
+                (Students o1, Students o2) -> o1.getSurname().compareTo(o2.getSurname());
+        student.forEach(System.out::println);
+        System.out.println();
+
+
+        Comparator<Students> comp = (o1, o2) -> {
+            return o1.getSurname().compareTo(o2.getSurname());
+        };
+        student.forEach(System.out::println);
     }
 }
