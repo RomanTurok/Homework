@@ -5,13 +5,24 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws NegativeNumberException {
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter number");
-        int n1 = sc.nextInt();
-        int squareNumber = n1 * n1;
-        System.out.println(squareNumber);
-        if (n1 < 0){
-            throw new NegativeNumberException();
+        try {
+            squareNumbers();
+        } catch (NegativeNumberException e){
+            e.printStackTrace();
         }
+    }
+
+    private static int squareNumbers() throws NegativeNumberException{
+        int res = 0;
+        System.out.println("Enter your number");
+        Scanner scanner = new Scanner(System.in);
+        res = scanner.nextInt();
+        if (res < 0){
+            throw new NegativeNumberException("Number cant be negative");
+        }
+        res = res * res;
+        System.out.println(res);
+
+        return res;
     }
 }
