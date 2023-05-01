@@ -14,15 +14,14 @@ public class Main {
             throw new RuntimeException(e);
         }
 
-
-        try (InputStream is = new FileInputStream("newFile.txt");
-             ObjectInputStream ois = new ObjectInputStream(is)) {
-             String b = a;
-            System.out.println(a);
-        } catch (IOException e) {
+//
+        try (InputStream is = new FileInputStream("newFile.txt")){
+          byte [] data = is.readAllBytes();
+          String dataString = new String(data);
+          System.out.println(dataString);
+    } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
-
+        }
     }
-}
